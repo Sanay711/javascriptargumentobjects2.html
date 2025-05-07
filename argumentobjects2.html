@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="abc1"></p>
+  <script>
+    function intro( ) {
+        var name = 0;
+        for(i = 0; i < arguments.length; i++) { 
+            if(arguments[i ] > name) {
+                name = arguments[i];
+            }
+        }
+        return name;
+    }
+    document.getElementById("abc1").innerHTML = intro(random);
+  </script>  
+</body>
+</html>
